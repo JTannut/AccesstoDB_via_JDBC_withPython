@@ -29,7 +29,7 @@ jdbcUrl = server_name + ";" + "databaseName=" + database_name + ";"
 jdbcDF = spark.table('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx').write.format("jdbc") \
 .mode("overwrite") \
 .option("url", jdbcUrl) \
-.option("dbtable", "dbo.tran_data_codes") \
+.option("dbtable", "xxxxxx") \
 .option("user", username) \
 .option("password", password) \
 .save()
